@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>View Patient</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true"> 
+  <ion-card>
+    <img src="assets/Dd.png">
+    <ion-card-header>
+      <h3>
+      Diahnah Davis
+      </h3>
+    </ion-card-header>
+  </ion-card>
+  <div class="parent-div">
+    <ion-fab vertical= "end" horizontal= "end">
+      <ion-button (click)="RedirectToHistoryage()">History</ion-button>
+      <ion-button (click)="RedirectToRecordsPage()">Records</ion-button>
+      <ion-button (click)="RedirectToInvoicePage()">Invoice</ion-button>
+    
+    </ion-fab>
+</div>
+</ion-content>

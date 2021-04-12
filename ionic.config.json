@@ -1,5 +1,8 @@
 {
   "name": "Caregiver",
-  "integrations": {},
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
   "type": "angular"
 }

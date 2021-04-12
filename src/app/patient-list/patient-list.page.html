@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>PatientList</ion-title>
+  </ion-toolbar>
+  <ion-searchbar showCancelButton="focus">
+  <style></style>
+  </ion-searchbar>
+</ion-header>
+
+
+<ion-content class = "ion-padding">
+  <h5>
+  <ion-list lines="none">
+     <ion-item>
+       <ion-avatar slot="start">
+        <img src="assets/Arthur.png">
+       </ion-avatar>
+       <ion-label><h3>Name:Arthur</h3>
+        <h4>Age: 77</h4>
+       </ion-label>
+     </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="assets/Dianah Davis.png" (click)="RedirecttoViewPage()">
+      </ion-avatar>
+      <ion-label><h3>Name:Dianah Davis</h3>
+        <h4>Age: 83</h4>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="assets/Ernest Moore.png">
+      </ion-avatar>
+      <ion-label><h3>Name:Ernest Moore</h3>
+        <h4>Age: 81</h4>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="assets/Melissa.png">
+      </ion-avatar>
+      <ion-label><h3>Name:Melissa D'Souza</h3>
+        <h4>Age: 80</h4>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="assets/Melvin Dearman.png">
+      </ion-avatar>
+      <ion-label><h3>Name:Melvin Dearman</h3>
+        <h4>Age: 80</h4> 
+      </ion-label>  
+    </ion-item>
+
+    
+
+      <div class="ion padding">
+        <ion-fab slot="" vertical="bottom" horizontal="end">
+        <ion-fab-button (click)="RedirecttoAddPage()"><ion-icon name="add"></ion-icon></ion-fab-button>
+      </ion-fab>
+     
+      </div>
+    
+
+    
+  </ion-list>
+</h5>
+</ion-content>

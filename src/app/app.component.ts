@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,18 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  constructor(public router: Router) {
+
+  }
+
+RedirectToViewage()
+{
+  this.router.navigateByUrl('/view')
+
 }
+
+ ngOnInit() {
+  }
+
+}
+

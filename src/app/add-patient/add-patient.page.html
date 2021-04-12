@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>AddPatient</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+
+    <ion-item>
+      <ion-label>Gender</ion-label>
+      <ion-select placeholder="Select One" [(ngModel)]="user.gender">
+        <ion-select-option value="Female">Female</ion-select-option>
+        <ion-select-option value="Male">Male</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Full name</ion-label>
+      <ion-input type="text"[(ngModel)]="user.name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" [(ngModel)]="user.email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Mobile</ion-label>
+      <ion-input type="tel" [(ngModel)]="user.mobile"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">General Health Condition</ion-label>
+      <ion-input type="text"[(ngModel)]="user.health"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Diagnosis</ion-label>
+      <ion-input type="text"[(ngModel)]="user.diagnose"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Medication</ion-label>
+      <ion-input type="text"[(ngModel)]="user.medication"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Allergies</ion-label>
+      <ion-input type="text"[(ngModel)]="user.allergies"></ion-input>
+    </ion-item>
+
+  
+  </ion-list>
+  <ion-footer>
+    <ion-toolbar>
+      <ion-button (click)="submit()">Submit</ion-button>
+    </ion-toolbar>
+  </ion-footer>
+
+    
+  
+  
+
+
+
+</ion-content>
