@@ -30,7 +30,7 @@ const routes: Routes = [
         path: 'back',
         children: [
           {
-            path: '',
+            path: 'patient-list',
             loadChildren: () => import('./patient-list/patient-list.module').then( m => m.PatientListPageModule)
           }
         ]
@@ -61,7 +61,8 @@ const routes: Routes = [
   {
     path: 'doctors',
     loadChildren: () => import('./doctors/doctors.module').then( m => m.DoctorsPageModule)
-  }
+  },
+  
 ];
 
 @NgModule({

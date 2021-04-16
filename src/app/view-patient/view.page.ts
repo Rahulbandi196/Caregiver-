@@ -29,6 +29,11 @@ export class ViewPage implements OnInit {
   {
     this.router.navigateByUrl('/invoice');
   }
+
+  back(){
+    
+    this.router.navigateByUrl('/patient-list');
+  }
    
 
   ngOnInit() {

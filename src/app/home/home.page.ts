@@ -17,6 +17,8 @@ export class HomePage {
 
   constructor(public router:Router) {
 
+    
+
   }
   
 
@@ -28,6 +30,10 @@ export class HomePage {
   }
 
   goRegister(){
+    console.log("Username: "+ this.username);
+
+    console.log("Password: "+ this.password);
+    this.router.navigateByUrl('/patient-list');
   
   }
 

@@ -4,6 +4,7 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
+
 import { HomePageRoutingModule } from './home-routing.module';
 import { RegisterPage } from '../register/register.page';
 
@@ -15,6 +16,8 @@ import { RegisterPage } from '../register/register.page';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage, RegisterPage]
+  declarations: [HomePage, RegisterPage],
+  
+
 })
 export class HomePageModule {}

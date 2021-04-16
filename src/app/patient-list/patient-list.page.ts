@@ -18,7 +18,7 @@ export class PatientListPage  {
   RedirecttoViewPage(){
     this.router.navigateByUrl('/view')
   }
-  RedirectToBackPage()
+  back()
   {
     this.router.navigateByUrl('/home');
   }

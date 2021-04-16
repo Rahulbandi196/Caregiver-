@@ -13,11 +13,15 @@ export class AppComponent {
 
   }
 
-RedirectToViewage()
-{
-  this.router.navigateByUrl('/view')
+  back(){
+    
+    this.router.navigateByUrl('/view');
+  }
 
-}
+  home(){
+
+    this.router.navigateByUrl('/patient-list')
+  }
 
  ngOnInit() {
   }
